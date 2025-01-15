@@ -1,0 +1,28 @@
+.heading__container {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 8px;
+    padding: 16px;
+}
+
+.heading__container h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.heading__container p {
+    font-size: 16px;
+    color: #888;
+    font-weight: 500;
+}
+
+@media (max-width : 576px) {
+    .heading__container h2 {
+        font-size: 28px;
+    }
+
+    .heading__container p {
+        font-size: 14px;
+    }
+}

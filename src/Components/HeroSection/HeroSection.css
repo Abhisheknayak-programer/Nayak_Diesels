@@ -1,0 +1,152 @@
+.herosection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.herosection__content {
+    padding: 16px 20px;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 12px;
+}
+
+.herosection__content h3 {
+    font-size: 22px;
+}
+
+.herosection__content h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+
+.herosection__content h2 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+
+.herosection__content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7888a2;
+}
+
+
+.hero___sec_btn {
+    background-image: radial-gradient(circle 410px at 55% 7.2%, rgba(37, 89, 222, 1) 0%, rgba(37, 89, 222, 1) 5%, rgba(4, 4, 29, 1) 44.7%);
+    cursor: pointer;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.4s;
+    width: 180px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero___sec_btn:hover {
+    background-image: radial-gradient(circle 710px at 80.2% 7.2%, rgba(37, 89, 222, 1) 0%, rgba(37, 89, 222, 1) 7.5%, rgba(4, 4, 29, 1) 32.7%);
+}
+
+.herosection__images {
+    width: 100%;
+    overflow: hidden;
+}
+
+.herosection__slides {
+    height: 420px;
+}
+
+@media (max-width : 1080px) {
+    .herosection__content h1 {
+        font-size: 44px;
+    }
+}
+
+
+@media (max-width : 992px) {
+    .herosection {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width : 600px) {
+    .herosection__slides {
+        height: 320px;
+    }
+}
+
+@media (max-width : 492px) {
+    .herosection__content h3 {
+        font-size: 18px;
+    }
+
+    .herosection__content h1 {
+        font-size: 36px;
+    }
+
+    .herosection__content h2 {
+        font-size: 25px;
+    }
+
+    .herosection__content p {
+        font-size: 15px;
+    }
+
+    .hero___sec_btn {
+        padding: 5px 12px;
+        font-size: 18px;
+        width: 160px;
+    }
+
+    .herosection__content {
+        row-gap: 8px;
+    }
+
+    .herosection__slides {
+        height: 300px;
+    }
+}
+
+@media (max-width : 415px) {
+    .herosection__content h3 {
+        font-size: 18px;
+    }
+
+    .herosection__content h1 {
+        font-size: 32px;
+    }
+
+    .herosection__content h2 {
+        font-size: 20px;
+    }
+
+    .herosection__content p {
+        font-size: 14px;
+    }
+
+    .herosection__slides {
+        height: 280px;
+    }
+}
+
+
+@media (max-width : 370px) {
+    .herosection__content h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width : 350px) {
+    .herosection__content h1 {
+        font-size: 28px;
+    }
+
+    .herosection__slides {
+        height: 240px;
+    }
+}
